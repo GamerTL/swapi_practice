@@ -1,0 +1,11 @@
+SW_API_BASE_URL = "http://swapi.co/api"
+API_NAME_FILMS = "films"
+API_NAME_PEOPLE = "people"
+API_NAME_PLANETS = "planets"
+API_NAME_SPECIES = "species"
+API_NAME_STAR_SHIPS = "starships"
+API_NAME_VEHICLES = "vehicles"
+
+FORMAT_API = "api"
+FORMAT_JSON = "json"
+FORMAT_WOOKIEE = "wookiee"
