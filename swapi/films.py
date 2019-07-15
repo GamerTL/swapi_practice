@@ -69,20 +69,3 @@ def get_films_results(films_api_url: str) -> list:
     result_films_list = []
     sw_utils.get_all_result(films_api_url, result_films_list)
     return result_films_list
-
-
-class FilmsTest(unittest.TestCase):
-
-    def test_get_films_results(self):
-        send_url = f"{SW_API_BASE_URL}/{API_NAME_FILMS}/?format=json"
-        result_films_data: list = get_films_results(send_url)
-        self.assertEqual(7, len(result_films_data))
-
-
-if __name__ == "__main__":
-    get_specific_films_all_characters_species_require_url = \
-        f"{SW_API_BASE_URL}/{API_NAME_FILMS}/?format={FORMAT_JSON}&search=Revenge of the Sith"
-
-    get_result_data: dict = \
-        get_specific_films_character_species_count(get_specific_films_all_characters_species_require_url)
-    print(get_result_data)

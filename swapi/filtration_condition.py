@@ -3,7 +3,6 @@
 
 import traceback
 
-
 class FiltrationCondition:
     filtration_condition_str = ""
 
@@ -31,3 +30,4 @@ class FiltrationCondition:
             except Exception:
                 traceback.print_exc()
                 print(vehicle)
+
