@@ -1,3 +1,6 @@
+# This module use to show the action that we are doing
+# then we can check the result data in screen
+
 from swapi.constant_variables import *
 from swapi import sw_utils
 from swapi import films
@@ -53,13 +56,26 @@ def find_out_all_vehicles_which_max_atmosphering_speed_is_over_1000():
 def get_all_films_result():
     action_require_url = f"{SW_API_BASE_URL}/{API_NAME_FILMS}/?format={FORMAT_JSON}"
     return_data = films.get_films_results(action_require_url)
-    return return_data
-
-
-def test_get_all_films_result():
-    return_data = get_all_films_result()
-    assert len(return_data) != 7
-
+    for films_data in return_data:
+        print(f"Films Title: {films_data['title']} \n[{films_data['opening_crawl']:.100}...]\n\n")
+    
 
 if __name__ == '__main__':
-    pass
+    print("######## Action Start ########")
+    
+    print("\n######## show_the_films_species() ########")
+    show_the_films_species()
+
+    print("\n######## show_the_films_characters_cover_how_many_species() ########")
+    show_the_films_characters_cover_how_many_species()
+
+    print("\n######## show_films_name_that_sort_by_episode_id() ########")
+    show_films_name_that_sort_by_episode_id()
+
+    print("\n######## find_out_all_vehicles_which_max_atmosphering_speed_is_over_1000() ########")
+    find_out_all_vehicles_which_max_atmosphering_speed_is_over_1000()
+    
+    print("\n######## get_all_films_result() ########")
+    get_all_films_result()
+
+    print("######## Action End ########")
