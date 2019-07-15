@@ -8,4 +8,4 @@ WORKDIR /swapi_practice
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["pytest", "/test/test_sample.py"]
+CMD ["pytest"]
