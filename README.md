@@ -1,9 +1,14 @@
-"# swapi_practice" 
+# swapi_practice
 
-####Inline code
+#Inline code
 
-##Build Docker image by Dockerfile
-`swapi_practice>$ docker build -t gtl_swapi_practice .`
+#Build Docker image by Dockerfile
+```bash
+swapi_practice>$ docker build -t gtl_swapi_practice .
+```
+
 
 ##Run the image by tty mode
-`$ docker run -it --name gtl_swapi_practice gtl_swapi_practice /bin/sh`
+```bash
+$ docker run -it --name gtl_swapi_practice gtl_swapi_practice /bin/sh
+```
