@@ -7,5 +7,3 @@ COPY . /swapi_practice
 WORKDIR /swapi_practice
 
 RUN pip install --no-cache-dir -r requirements.txt
-
-CMD ["pytest", "-v"]
