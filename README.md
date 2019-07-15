@@ -8,7 +8,7 @@ Build Docker image by Dockerfile:
 ```
 Run the image by tty mode:
 ```bash
-$ docker run -it --name gtl_swapi_practice gtl_swapi_practice /bin/sh
+$ docker run -it --name swapi_test gtl_swapi_practice /bin/sh
 ```
 ## Run by PyTest
 In Docker container, use the command below to run test script by PyTest
