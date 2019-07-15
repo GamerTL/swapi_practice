@@ -1,6 +1,7 @@
 # swapi_practice
+This project is use to practice Star Wars API by use Requests and Pytest Library from: https://swapi.co/
 
-## Init Docker by Dockerfile and run it
+## Initialize Docker by Dockerfile and run it
 Build Docker image by Dockerfile:
 ```bash
 /swapi_practice>$ docker build -t gtl_swapi_practice .
