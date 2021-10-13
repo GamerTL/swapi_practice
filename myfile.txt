@@ -1,4 +1,3 @@
 myfile test message
 # add from fix_01
-# add from fix_02
-# add from fix_03
+# add from fix_03_rebase
